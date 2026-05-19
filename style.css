@@ -209,7 +209,7 @@ body{
 .image-content {
     flex-shrink: 0;
     width: auto; /* Ajustado para que la imagen ocupe el espacio necesario */
-    max-width: 50%; /* Ajustado para que la imagen no ocupe más del 50% del contenedor */
+    max-width: 10%; /* Ajustado para que la imagen no ocupe más del 50% del contenedor */
 }
 
 .image-content img{
