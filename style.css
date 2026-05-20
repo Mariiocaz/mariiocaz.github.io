@@ -241,7 +241,7 @@ body{
     }
 }
 
-.content{
+.content2{
     font-family: Quicksand, Montserrat-Light, Raleway, Montserrat;
     font-size: 1em; 
     font-weight: normal;
@@ -254,6 +254,16 @@ body{
     border: 1px solid rgb(220, 220, 220);
     border-radius: 16px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.content{
+    font-family: Quicksand, Montserrat-Light, Raleway, Montserrat;
+    font-size: 1em; 
+    font-weight: normal;
+    font-size: normal;
+
+    width: 100%;
+    padding: 2%;
 }
 
 .content #section1{
