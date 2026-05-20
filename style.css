@@ -169,20 +169,26 @@ body{
 }
 
 .header-content {
-    /*font-family:  Baskervville, Quicksand, Montserrat-Light, Montserrat;*/
     font-family: Helvetica, Arial, sans-serif;
     letter-spacing: 3px;
     text-decoration: none;
     color: black;
-    width: 100%;
 
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+
     font-size: clamp(1rem, 3.4783vw + 0.3043rem, 3rem);
-    width: 100%;
-    padding: 20px;
+
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .header-content h1{
