@@ -200,16 +200,16 @@ body{
 }
 
 .text-content {
-    text-align: right;
+    text-align: left;
     flex: 1;
     text-wrap: balance;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .image-content {
     flex-shrink: 0;
-    width: auto; /* Ajustado para que la imagen ocupe el espacio necesario */
-    max-width: 10%; /* Ajustado para que la imagen no ocupe más del 50% del contenedor */
+    width: auto;
+    max-width: 20%;
 }
 
 .image-content img{
@@ -219,12 +219,19 @@ body{
 }
 
 @media (max-width: 600px) {
-    .text-content, .image-content {
-        max-width: 100%; /* Ajusta el ancho máximo al 100% en pantallas pequeñas */
-        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+
+    .text-content, .image-content {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
     .text-content {
-        margin-bottom: 20px; /* Añade un margen inferior para separar el texto de la imagen */
+        margin-top: 20px;
     }
 }
 
