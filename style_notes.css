@@ -1,79 +1,289 @@
-.button-container{
-    display:flex;
-    flex-direction: column;    
+main {
+    flex-grow: 1;
+}
+
+
+.content{
+    font-family: Quicksand, Montserrat-Light, Raleway, Montserrat;
+    font-size: 1em; 
+    font-weight: normal;
+    font-size: normal;
+
+    width: 100%;
+    padding: 2%;
+}
+
+/* Intro cards */
+.content3 {
+    width: 85%;
+    max-width: 1300px;
+    margin: 50px auto 30px auto;
+    padding: 38px 46px;
+
+    background-color: rgba(0, 0, 0, 0.86);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    border-radius: 28px;
+    box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.10);
+    color: rgb(228, 228, 228);
+
+    font-family: Quicksand, Montserrat-Light, Raleway, Montserrat;
+}
+
+.content3 p {
+    max-width: 1200px;
+    margin: 0;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    color: rgb(190, 190, 190);
+}
+
+
+.content h1 {
+    margin: 0 0 18px 0;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: clamp(2.1rem, 5vw, 4rem);
+    line-height: 1;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.content p {
+    max-width: 850px;
+    margin: 0;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    color: rgb(45, 45, 45);
+}
+
+/* Container for semester buttons */
+.button-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    font-family: Quicksand, Montserrat-Light, Raleway, Montserrat;
+}
+
+/* Semester main buttons */
+.button-container .button {
+    width: 100%;
+
+    display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    width:100%;
-    justify-content: center;
-    text-align: center;
-}
+    justify-content: space-between;
 
-.button-container .button{
-    display: flex;
-    justify-content: center;
-    align-items:center;
+    padding: 22px 28px;
+    margin: 0;
+
     cursor: pointer;
-    padding: 10px 15px;
-    width:80%;
-    margin-bottom: 10px;
-    font-family:  monospace;
-    text-align: center;
 
+    background-color: rgba(255, 255, 255, 0.88) !important;
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(230, 230, 230, 0.9) !important;
+    border-radius: 22px !important;
+
+    color: black !important;
+
+    font-family: Montserrat-Light, Quicksand, Montserrat !important;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                background-color 0.2s ease;
 }
-.button-container .semester{
+
+.button-container .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+    background-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+
+
+/* Add small plus symbol after semester buttons */
+.button-container .button::after {
+    content: "+";
+    font-size: 1.3rem;
+    letter-spacing: 0;
+}
+
+/* Semester area */
+.button-container .semester {
+    width: 100%;
+    margin: 0 0 16px 0;
+
+    padding: 8px 0 4px 0;
+
+    align-items: stretch;
+    text-align: left;
+}
+
+/* Course cards */
+.button-container .semester .course-button {
+    width: 80%;
+
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    align-items:center;
-    width:60%;
-    text-align: center;
-    justify-content: center;
-}
+    align-items: flex-start;
 
-.button-container .semester .course-button{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    align-items:center;
+    gap: 7px;
+
+    padding: 24px 28px;
+    margin: 12px 0;
+
     cursor: pointer;
-    padding: 10px 15px;
-    width:100%;
-    margin-bottom: 10px;
-    font-family:  monospace;
-    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.82) !important;
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(235, 235, 235, 0.95) !important;
+    border-radius: 22px !important;
+
+    color: black !important;
+    text-align: left;
     text-decoration: none;
-    color: rgb(82, 108, 190);
-    font-family:  monospace;
+
+    font-family: Quicksand, Montserrat-Light, Raleway, Montserrat !important;
+
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
 }
 
 
-.button-container .semester .types{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    align-items:center;
-    justify-content: center;
-    text-align: center;
-    width:100%;
+
+.button-container .semester .course-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.10);
+    border-color: rgba(0, 0, 0, 0.18) !important;
 }
 
-.button-container .semester .types .type{
-    display: flex;
-    justify-content: center; 
+/* Course title */
+.button-container .semester .course-button strong {
+    font-family: Montserrat-Light, Quicksand, Montserrat;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Professor / assistant text */
+.button-container .semester .course-button div:not(:first-child) {
+    font-size: 0.95rem !important;
+    color: rgb(90, 90, 90) !important;
+    letter-spacing: 1px;
+}
+
+
+
+/* Type/link container */
+.button-container .semester .types {
+    width: 100%;
+
+    margin: 0 0 20px 0;
+    padding: 6px 0 16px 0;
+
+    text-align: left;
+}
+
+/* PDF links */
+.button-container .semester .types .type {
+    display: inline-flex;
     align-items: center;
-    cursor: pointer;
-    padding: 10px 15px;
-    font-family: monospace;
-    text-align: center; 
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
+    justify-content: center;
+
+    width: auto;
+    min-width: 150px;
+
+    margin: 8px 8px 8px 0;
+    padding: 12px 18px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(220, 220, 220, 0.9);
+    border-radius: 999px;
+
+    color: black;
     text-decoration: none;
-    color: rgb(165, 178, 220);
-    margin: 10px auto;
-    width: 60%;
+
+    font-family: Montserrat-Light, Quicksand, Montserrat;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.2s ease,
+                background-color 0.2s ease,
+                color 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
+.button-container .semester .types .type:hover {
+    transform: translateY(-2px);
+    background-color: black;
+    color: white;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.14);
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+    .content,
+    .button-container {
+        width: 90%;
+    }
+
+    .content {
+        padding: 30px 26px;
+        margin-top: 35px;
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+        letter-spacing: 4px;
+    }
+
+    .content p {
+        font-size: 0.98rem;
+        line-height: 1.65;
+    }
+
+    .button-container .button {
+        padding: 20px 22px;
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+    }
+
+    .button-container .semester .course-button {
+        padding: 22px;
+    }
+
+    .button-container .semester .course-button strong {
+        font-size: 1rem;
+    }
+
+    .button-container .semester .types .type {
+        width: 100%;
+        margin-right: 0;
+    }
+}
 
 
 

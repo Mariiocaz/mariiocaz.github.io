@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang = "en">  
+    <head> 
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_notes.css">
+    </head>
+    <body> 
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="left"></div>
+                <div class="center"> Mario Calderón</div>
+                <div class="dropdown">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Menu </span></button>
+                    <div class="content">
+                        <a class="cta" href="index.html">
+                            <span class="hover-underline-animation"> About </span></a>
+                        <a class="cta" href="Notes.html">
+                            <span class="hover-underline-animation"> Notes </span></a>
+                        <a class="cta" href="Research_exp.html">
+                            <span class="hover-underline-animation"> Research experience </span></a>
+                        <a class="cta" href="Schools.html">
+                            <span class="hover-underline-animation"> Schools and Seminars </span></a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+
+        <main style="flex-grow: 1;">
+            <section class = "content3">  
+                <h1 id="section1"><u>Notes</u></h1>
+                <p>This page brings together my notes from lectures and auxiliary sessions for the courses I took during my astronomy and master in physics degree at the University of Chile. Some of the auxiliary session notes also include reference materials shared by the teaching assistants at the time, which I found helpful throughout my studies.</p>
+            </section>
+            <section class="button-container">
+                <button class="button" onclick="toggleDisplay('5th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">5th semester</button>
+                <section class="semester" id="5th_semester" style="display: none;">
+
+                    <button class="course-button" onclick="toggleDisplay('Vibraciones')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Vibraciones y ondas</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Rodrigo Vicencio</div>
+                    </button>
+                    <section class="types" id="Vibraciones" style="display: none;">
+                        <a class="type" href="5to semestre/Vibraciones_y_ondas-1-20.pdf" target = "_blank">Cátedra I</a>
+                        <a class="type" href="5to semestre/Vibraciones_y_ondas-20-40.pdf" target = "_blank">Cátedra II</a>
+                        <a class="type" href="5to semestre/Vibraciones_y_ondas-40-134.pdf" target = "_blank">Cátedra III</a>
+                        <a class="type" href="5to semestre/Auxiliar Vibras. 2025-02-08 20_16_28.pdf" target = "_blank">Auxiliar</a>
+                    </section>
+
+                    <button class="course-button" onclick="toggleDisplay('Proba')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Probabilidades y estadística</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Raul Gouet</div>
+                    </button>
+                    <section class="types" id="Proba" style="display: none;">
+                        <a class="type" href="5to semestre/Probabilidades Y Estadistica-1-30_compressed.pdf" target = "_blank">Cátedra I</a>
+                        <a class="type" href="5to semestre/Probabilidades Y Estadistica-30-144_compressed.pdf" target = "_blank">Cátedra II</a>
+                        <a class="type" href="5to semestre/Auxiliar Probabilidades Y Estadística 2025-02-08 18_36_05.pdf" target="_blank">Auxiliar</a>
+                    </section>
+
+                    <button class="course-button" onclick="toggleDisplay('mmf')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Métodos matemáticos de la física</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Álvaro Núñez</div>
+                    </button>
+                    <section class="types" id="mmf" style="display: none;">
+                        <a class="type" href="5to semestre/Metodos Matematicos de la Fisica-1-49.pdf" target="_blank">Cátedra I</a>
+                        <a class="type" href="5to semestre/Metodos Matematicos de la Fisica-49-145.pdf" target = "_blank">Cátedra II</a>
+                    </section>
+
+                    <button class="course-button" onclick="toggleDisplay('numericos')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Métodos Numéricos para la Ciencia e Ingeniería</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Valentino González</div>
+                    </button>
+                    <section class="types" id="numericos" style="display: none;">
+                        <a class="type" href="5to semestre/Metodos Matematicos de la Fisica-1-49.pdf" target="_blank">Cátedra I</a>
+                        <a class="type" href="5to semestre/Metodos Matematicos de la Fisica-49-145.pdf" target = "_blank">Cátedra II</a>
+                    </section>
+
+                    <button class="course-button" onclick="toggleDisplay('exp')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Astronomía Experimental</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Leonardo Bronfman and Edgardo Costa</div>
+                    </button>
+                    <section class="types" id="exp" style="display: none;">
+                        <a class="type" href="5to semestre/Metodos Matematicos de la Fisica-1-49.pdf" target="_blank">Cátedra I</a>
+                        <a class="type" href="5to semestre/Metodos Matematicos de la Fisica-49-145.pdf" target = "_blank">Cátedra II</a>
+                    </section>  
+                </section>
+
+                <button class="button" onclick="toggleDisplay('6th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">6th semester</button>
+                <section class="semester" id="6th_semester" style="display: none;">
+
+                    <button class="course-button" onclick="toggleDisplay('Electrodinámica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Electrodinámica</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Rodrigo Arias</div>
+                    </button>
+                    <section class="types" id="Electrodinámica" style="display: none;">
+                        <a class="type" href="6to semestre/Electrodinamica-1-65.pdf" target="_blank">Cátedra I</a>
+                        <a class="type" href="6to semestre/Electrodinamica-65-129.pdf" target="_blank">Cátedra II</a>
+                    </section>
+
+                    <button class="course-button" onclick="toggleDisplay('Clásica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Mecánica clásica</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Fernando Lund</div>
+                    </button>
+                    <section class="types" id="Clásica" style="display: none;">
+                        <a class="type" href="6to semestre/Mecánica Clásica 2025-02-08 20_08_33.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="6to semestre/Aux. Mecanica Clasica.pdf" target="_blank">Auxiliar</a>
+                    </section>
+
+                    <button class="course-button" onclick="toggleDisplay('moderna')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Física Moderna</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Mauricio Sturla</div>
+                    </button>
+                    <section class="types" id="moderna" style="display: none;">
+                        <a class="type" href="6to semestre/Mecánica Clásica 2025-02-08 20_08_33.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="6to semestre/Aux. Mecanica Clasica.pdf" target="_blank">Auxiliar</a>
+                    </section>
+
+                    <button class="course-button" onclick="toggleDisplay('estrellas')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Astrofísica de Estrellas</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Simón Casassus</div>
+                    </button>
+                    <section class="types" id="estrellas" style="display: none;">
+                        <a class="type" href="6to semestre/Mecánica Clásica 2025-02-08 20_08_33.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="6to semestre/Aux. Mecanica Clasica.pdf" target="_blank">Auxiliar</a>
+                    </section>
+                </section>
+                
+                <button class="button" onclick="toggleDisplay('7th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">7th semester</button>
+                <section class="semester" id="7th_semester" style="display: none;">
+
+                    <button class="course-button" onclick="toggleDisplay('Cuántica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Mecánica cuántica</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Hugo Arellano</div>
+                    </button>
+                    <section class="types" id="Cuántica" style="display: none;">
+                        <a class="type" href="7mo semestre/Cuantica.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="7mo semestre/Aux Cuantica.pdf" target="_blank">Auxiliar</a>
+                    </section>
+                    <button class="course-button" onclick="toggleDisplay('galaxias')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Astrofísica de Galaxias</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Ricardo Muñoz</div>
+                    </button>
+                    <section class="types" id="galaxias" style="display: none;">
+                        <a class="type" href="7mo semestre/Cuantica.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="7mo semestre/Aux Cuantica.pdf" target="_blank">Auxiliar</a>
+                    </section>
+
+                    <button class="course-button" onclick="toggleDisplay('info')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Astroinformática</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Valentino González and Francisco Forster</div>
+                    </button>
+                    <section class="types" id="info" style="display: none;">
+                        <a class="type" href="7mo semestre/Cuantica.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="7mo semestre/Aux Cuantica.pdf" target="_blank">Auxiliar</a>
+                    </section>
+                </section>
+                
+                <button class="button" onclick="toggleDisplay('8th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">8th semester</button>
+                <section class="semester" id="8th_semester" style="display: none;">
+
+                    <button class="course-button" onclick="toggleDisplay('Mesta')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Mecánica estadística</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Álvaro Núñez</div>
+                    </button>
+                    <section class="types" id="Mesta" style="display: none;">
+                        <a class="type" href="8vo semestre/Mecánica Estadística.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="8vo semestre/Estudio Mesta.pdf" target="_blank">Material extra</a>
+                    </section>
+
+                    <button class="course-button" onclick="toggleDisplay('Cosmo')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Cosmología</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Domenico Sapone</div>
+                    <section class="types" id="Cosmo" style="display: none;">
+                        <a class="type" href="8vo semestre/Cosmologia-1-30_compressed.pdf" target="_blank">Cátedra I</a>
+                        <a class="type" href="8vo semestre/Cosmologia-30-50.pdf" target="_blank">Cátedra II</a>
+                        <a class="type" href="8vo semestre/Cosmologia-50-75.pdf" target="_blank">Cátedra III</a>
+                    </section>
+                </section>
+
+                <button class="button" onclick="toggleDisplay('Master')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">Master's degree</button>
+                <section class="semester" id="Master" style="display: none;">
+
+                    <button class="course-button" onclick="toggleDisplay('rg')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Relatividad General</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Gonzalo Palma</div>
+                    </button>
+                    <section class="types" id="rg" style="display: none;">
+                        <a class="type" href="Master_1/Cu%C3%A1ntica%20II_compressed-1-70.pdf" target="_blank">Cátedra I</a>
+                        <a class="type" href="Master_1/Cu%C3%A1ntica%20II_compressed-71-106.pdf" target="_blank">Cátedra II</a>
+                        <a class="type" href="Master_1/Cu%C3%A1ntica%20II_compressed-107-140.pdf" target="_blank">Cátedra III</a>
+                    </section>
+                </section>
+                <script>
+                    function toggleDisplay(id) {
+                        var element = document.getElementById(id);
+                        if (element.style.display === "none") {
+                            element.style.display = "block";
+                        } else {
+                            element.style.display = "none";
+                        }
+                    }
+                </script>
+            </section>
+            <section class="content3">  
+                    <h1 id="section1"><u>Teaching Assistant Classes</u></h1>
+                    <p>This section includes materials from the classes I have taught across different courses.</p>
+                </section>
+                <section class="button-container">
+                    <section class="semester">
+                        <button class="button" onclick="toggleDisplay('cl_2025')" style="background-color: rgb(255, 255, 255); border-radius:5px; border: none; margin: 0 0 16px 0;">
+                            <div><strong>Introducción a la Física Clásica 2025</strong></div>
+                            <div style="font-size: 0.9em; color: gray;">Prof. Valentino González</div>
+                        </button>
+                        <section class="types" id="cl_2025" style="display: none;">
+                            <a class="type" href="Documentos/Pauta%20Aux%20Electro-1-40.pdf" target="_blank">Auxiliares I</a>
+                            <a class="type" href="Documentos/Pauta%20Aux%20Electro-41-80.pdf" target="_blank">Auxiliares II</a>
+                        </section>
+
+                        <button class="button" onclick="toggleDisplay('cl_2026')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none; margin: 0 0 16px 0;">
+                            <div><strong>Introducción a la Física Clásica 2026</strong></div>
+                            <div style="font-size: 0.9em; color: gray;">Prof. Maria Luisa Cordero</div>
+                        </button>
+                        <section class="types" id="cl_2026" style="display: none;">
+                            <a class="type" href="Documentos/Pauta%20Aux%20Electro-1-40.pdf" target="_blank">Auxiliares I</a>
+                            <a class="type" href="Documentos/Pauta%20Aux%20Electro-41-80.pdf" target="_blank">Auxiliares II</a>
+                        </section>
+                    </section>
+                    <script>
+                        function toggleDisplay(id) {
+                            var element = document.getElementById(id);
+                            if (element.style.display === "none") {
+                                element.style.display = "block";
+                            } else {
+                                element.style.display = "none";
+                            }
+                        }
+                    </script>
+                </section>
+        </main>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
